@@ -1,32 +1,49 @@
 @font-face {
     font-family: Poppins-Bold;
-    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-Bold.ttf);
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
     font-family: Poppins-BoldItalic;
-    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-BoldItalic.ttf);
+    src: url(assets/fonts/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
     font-family: Poppins-ExtraBold;
-    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-ExtraBold.ttf);
+    src: url(assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
     font-family: Poppins-ExtraBoldItalic;
-    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face {
     font-family: Poppins-Italic;
-    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-Italic.ttf);
+    src: url(assets/fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
     font-family: Poppins-Regular;
-    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-Regular.ttf);
+    src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
 body{
     display: flex;
     flex-direction: column;
     height: fit-content;
+    background-color: hsl(0, 0%, 94%);
 }
 
 .hero{
-    background-color: antiquewhite;
+    background-color: white;
     display: flex;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
     margin: auto auto auto auto;
     border-radius: 30px;
+    border-bottom-right-radius: 200px;
 }
 
 .DMY{
@@ -39,7 +56,7 @@ body{
 }
 
 .Input-section{
-    margin: 1vw 0vw 2vw 1.5vw;
+    margin: 1vw 0vw 1vw 1.5vw;
 }
 
 #day{
@@ -52,6 +69,9 @@ body{
 
 .Heading{
     font-family: Poppins-Bold;
+    color: hsl(0, 1%, 44%);
+    font-size: 0.85vw;
+    letter-spacing: 4px;
 }
 
 .Input-section input{
@@ -61,15 +81,90 @@ body{
     border-radius: 5px;
     font-size: 32px;
     margin-top: 0vw;
-
+    font-family: Poppins-Bold;
+    padding-left: 1.5vw;
+    cursor: pointer;
 }
 
 .Input-section input:focus{
     outline: none;
     font-size: 32px;
+    font-family: Poppins-Bold;
+    border-color: hsl(259, 100%, 65%);
+    color: hsl(0, 0%, 8%);
+}
+
+.Input-section input:focus::placeholder{
+    color: white;
 }
 
 .Input-section input::selection{
     font-size: 32px;
-
 }
+
+.error{
+    display: none;
+    color: hsl(0, 100%, 67%);
+    font-family: Poppins-Italic;
+    font-size: 0.8vw;
+    margin-bottom: 0vw;
+}
+
+.Seperation{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    /* background-color: antiquewhite; */
+}
+
+.line{
+    width: 40vw;
+    height: 2px;
+    background-color: hsl(0, 0%, 94%);
+    border-radius: 5px;
+    margin: 1.7vw 0vw 0vw 3vw 
+}
+
+svg{
+    width: 4.5vw;
+    height: 4.5vw;
+    background-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 0vw 3vw 0vw 0vw;
+}
+
+svg:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+path{
+    width: 2vw;
+    height: 2vw;
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+    font-size: 5vw;
+    font-family: Poppins-ExtraBoldItalic;
+    margin: 0vw 0vw 0vw 3vw;
+}
+
+.result p{
+    margin: 0vw 0vw 0vw 0vw;
+}
+
+.result-number{
+    color: hsl(259, 100%, 65%);
+}
+
+.result-text{
+    color: hsl(0, 0%, 8%);
+}
+
+#day-result{
+    margin-bottom: 2vw;
+}
+

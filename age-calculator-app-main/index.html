@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <div class="hero">
     <div class="DMY">
       <div class="Input-section" id="day">
-        <p class="Heading">
-          Day
+        <p class="Heading" id="day-heading">
+          DAY
         </p>
-        <input type="text" class="input-box">
+        <input type="number" class="input-box" placeholder="DD" id="day-input">
+        <p class="error" id="day-error"></p>
       </div>
       <div class="Input-section" id="month">
-        <p class="Heading">
-          Month
+        <p class="Heading" id="month-heading">
+          MONTH
         </p>
-        <input type="text" class="input-box">
+        <input type="number" class="input-box " placeholder="MM" id="month-input">
+        <p class="error" id="month-error"></p>
 
       </div>
       <div class="Input-section" id="year">
-        <p class="Year">
-          Year
+        <p class="Heading" id="year-heading">
+          YEAR
         </p>
-        <input type="text" class="input-box">
+        <input type="number" class="input-box" placeholder="YYYY" id="year-input">
+        <p class="error" id="year-error"></p>
+
       </div>
     </div>
     <div class="Seperation">
-
+      <div class="line"></div>
+      <!-- <button class="button">
+      </button> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44" id="submit">
+        <g fill="none" stroke="#FFF" stroke-width="2">
+          <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+        </g>
+      </svg>
     </div>
     <div class="calc">
+      <div class="result" id="year-resut">
+        <p class="result-number" id="years">- -</p>
+        <p class="result-text">years</p>
+      </div>
+      <div class="result" id="month-result">
+        <p class="result-number" id="months">- -</p>
+        <p class="result-text">months</p>
+      </div>
+      <div class="result" id="day-result">
+        <p class="result-number" id="days">- -</p>
+        <p class="result-text">days</p>
 
+      </div>
     </div>
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Sahil Batgeri</a>.
   </div>
 </body>
 <script src="script.js"></script>
+
 </html>
