@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-Bold.ttf);
+    font-family: Poppins-BoldItalic;
+    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-BoldItalic.ttf);
+    font-family: Poppins-ExtraBold;
+    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-ExtraBold.ttf);
+    font-family: Poppins-ExtraBoldItalic;
+    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+    font-family: Poppins-Italic;
+    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-Italic.ttf);
+    font-family: Poppins-Regular;
+    src: url(Age-calculator/age-calculator-app-main/assets/fonts/Poppins-Regular.ttf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.hero{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: auto auto auto auto;
+    border-radius: 30px;
+}
+
+.DMY{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    margin: 1vw 1vw 1vw 1vw;
+    /* background-color: aqua; */
+}
+
+.Input-section{
+    margin: 1vw 0vw 2vw 1.5vw;
+}
+
+#day{
+    margin-left: 2vw;
+}
+
+#year{
+    margin-right: 2vw;
+}
+
+.Heading{
+    font-family: Poppins-Bold;
+}
+
+.Input-section input{
+    border: 1px solid hsl(0, 0%, 86%);
+    width: 8vw;
+    height: 4vw;
+    border-radius: 5px;
+    font-size: 32px;
+    margin-top: 0vw;
+
+}
+
+.Input-section input:focus{
+    outline: none;
+    font-size: 32px;
+}
+
+.Input-section input::selection{
+    font-size: 32px;
+
+}
