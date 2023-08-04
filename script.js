@@ -221,6 +221,10 @@ function getAge(){
     if(day.value <= currentDay){
         resultDays = currentDay - day.value;
     }
+    else{
+        resultDays = 30 - (day.value - currentDay);
+        resultMonths -= 1;
+    }
 
 
     totalMonths.innerText = resultMonths;
