@@ -52,7 +52,7 @@ body{
     flex-direction: row;
     width: fit-content;
     height: fit-content;
-    margin: 1vw 1vw 1vw 1vw;
+    margin: 1vw 1vw 0vw 1vw;
     /* background-color: aqua; */
 }
 
@@ -117,6 +117,7 @@ body{
     width: 100%;
     height: fit-content;
     /* background-color: antiquewhite; */
+    margin-top: 0vw;
 }
 
 .line{
@@ -124,7 +125,25 @@ body{
     height: 2px;
     background-color: hsl(0, 0%, 94%);
     border-radius: 5px;
-    margin: 1.7vw 0vw 0vw 3vw 
+    margin: 3vw 0vw 0vw 3vw 
+}
+
+.button{
+    width: fit-content;
+    margin: 0vw 3vw 0vw 0vw;
+    border-radius: 50px;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: hsl(0, 0%, 8%);
+
+}
+
+.button:hover svg{
+    background-color: hsl(0, 0%, 8%);
 }
 
 svg{
@@ -133,7 +152,8 @@ svg{
     background-color: hsl(259, 100%, 65%);
     cursor: pointer;
     border-radius: 50px;
-    margin: 0vw 3vw 0vw 0vw;
+    margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+    transform: scale(0.7,0.7);
 }
 
 svg:hover{
