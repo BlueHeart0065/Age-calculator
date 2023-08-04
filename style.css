@@ -41,7 +41,7 @@ body{
     flex-direction: column;
     width: fit-content;
     height: fit-content;
-    margin: auto auto auto auto;
+    margin: 2vw auto auto auto;
     border-radius: 30px;
     border-bottom-right-radius: 200px;
     transform: scale(0.8,0.8);
@@ -80,7 +80,7 @@ body{
     width: 8vw;
     height: 4vw;
     border-radius: 5px;
-    font-size: 32px;
+    font-size: 2vw;
     margin-top: 0vw;
     font-family: Poppins-Bold;
     padding-left: 1.5vw;
@@ -89,7 +89,7 @@ body{
 
 .Input-section input:focus{
     outline: none;
-    font-size: 32px;
+    font-size: 2vw;
     font-family: Poppins-Bold;
     border-color: hsl(259, 100%, 65%);
     color: hsl(0, 0%, 8%);
@@ -100,7 +100,7 @@ body{
 }
 
 .Input-section input::selection{
-    font-size: 32px;
+    font-size: 2vw;
 }
 
 .error{
@@ -130,6 +130,7 @@ body{
 
 .button{
     width: fit-content;
+    height: fit-content;
     margin: 0vw 3vw 0vw 0vw;
     border-radius: 50px;
     background-color: hsl(259, 100%, 65%);
@@ -189,3 +190,85 @@ path{
     margin-bottom: 2vw;
 }
 
+
+@media only screen and (max-width: 800px){
+
+    body{
+        overflow: hidden;
+    }
+
+    .hero{
+        margin: 10vw 0vw -10vw -9vw;
+    }
+
+    .Heading{
+        font-size: 3.85vw;
+    }
+
+    .DMY{
+        margin: 0vw 8vw 0vw 8vw;
+    }
+
+    .Input-section{
+        margin: 5vw 0vw 2vw 5.5vw;
+    }
+
+    .Input-section input{
+        width: 22vw;
+        height: 15vw;
+        font-size: 6vw; 
+        padding-left: 5vw;
+    }
+
+    .Input-section input::placeholder{
+        font-size: 6vw; 
+    }
+
+    .Input-section input:focus{
+        font-size: 6vw; 
+    } 
+
+    .Input-section input::selection{
+        font-size: 6vw;
+    }
+
+    .error{
+        font-size: 2.8vw;
+    }
+
+    .Seperation{
+        margin-top: 7vw;
+        margin-bottom: 7vw;
+        margin-left: 8vw;
+        margin-right: 5vw;
+    }
+
+    svg{
+        width:14.5vw;
+        height: 14.5vw; 
+    }
+
+    .button{
+        margin: auto;
+    }
+
+    .line{
+        position: absolute;
+        z-index: -1;
+        width: 93vw;
+        top:48vw;
+    }
+
+    .result{
+        font-size: 15vw;
+        margin: 0vw 8vw 0vw 8vw;
+    }
+
+    #day-result{
+        margin-bottom: 20vw;
+    }
+
+
+
+
+}
