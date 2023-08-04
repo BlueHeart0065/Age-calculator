@@ -28,14 +28,14 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     height: fit-content;
     background-color: hsl(0, 0%, 94%);
 }
 
-.hero{
+.hero {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -44,10 +44,10 @@ body{
     margin: 2vw auto auto auto;
     border-radius: 30px;
     border-bottom-right-radius: 200px;
-    transform: scale(0.8,0.8);
+    transform: scale(0.8, 0.8);
 }
 
-.DMY{
+.DMY {
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -56,26 +56,26 @@ body{
     /* background-color: aqua; */
 }
 
-.Input-section{
+.Input-section {
     margin: 1vw 0vw 1vw 1.5vw;
 }
 
-#day{
+#day {
     margin-left: 2vw;
 }
 
-#year{
+#year {
     margin-right: 2vw;
 }
 
-.Heading{
+.Heading {
     font-family: Poppins-Bold;
     color: hsl(0, 1%, 44%);
     font-size: 0.85vw;
     letter-spacing: 4px;
 }
 
-.Input-section input{
+.Input-section input {
     border: 1px solid hsl(0, 0%, 86%);
     width: 8vw;
     height: 4vw;
@@ -87,7 +87,7 @@ body{
     cursor: pointer;
 }
 
-.Input-section input:focus{
+.Input-section input:focus {
     outline: none;
     font-size: 2vw;
     font-family: Poppins-Bold;
@@ -95,15 +95,15 @@ body{
     color: hsl(0, 0%, 8%);
 }
 
-.Input-section input:focus::placeholder{
+.Input-section input:focus::placeholder {
     color: white;
 }
 
-.Input-section input::selection{
+.Input-section input::selection {
     font-size: 2vw;
 }
 
-.error{
+.error {
     display: none;
     color: hsl(0, 100%, 67%);
     font-family: Poppins-Italic;
@@ -111,7 +111,7 @@ body{
     margin-bottom: 0vw;
 }
 
-.Seperation{
+.Seperation {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -120,15 +120,15 @@ body{
     margin-top: 0vw;
 }
 
-.line{
+.line {
     width: 40vw;
     height: 2px;
     background-color: hsl(0, 0%, 94%);
     border-radius: 5px;
-    margin: 3vw 0vw 0vw 3vw 
+    margin: 3vw 0vw 0vw 3vw
 }
 
-.button{
+.button {
     width: fit-content;
     height: fit-content;
     margin: 0vw 3vw 0vw 0vw;
@@ -138,35 +138,35 @@ body{
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background-color: hsl(0, 0%, 8%);
 
 }
 
-.button:hover svg{
+.button:hover svg {
     background-color: hsl(0, 0%, 8%);
 }
 
-svg{
+svg {
     width: 4.5vw;
     height: 4.5vw;
     background-color: hsl(259, 100%, 65%);
     cursor: pointer;
     border-radius: 50px;
     margin: 0.5vw 0.5vw 0.5vw 0.5vw;
-    transform: scale(0.7,0.7);
+    transform: scale(0.7, 0.7);
 }
 
-svg:hover{
+svg:hover {
     background-color: hsl(0, 0%, 8%);
 }
 
-path{
+path {
     width: 2vw;
     height: 2vw;
 }
 
-.result{
+.result {
     display: flex;
     flex-direction: row;
     font-size: 5vw;
@@ -174,98 +174,105 @@ path{
     margin: 0vw 0vw 0vw 3vw;
 }
 
-.result p{
+.result p {
     margin: 0vw 1vw 0vw 0vw;
 }
 
-.result-number{
+.result-number {
     color: hsl(259, 100%, 65%);
 }
 
-.result-text{
+.result-text {
     color: hsl(0, 0%, 8%);
 }
 
-#day-result{
+#day-result {
     margin-bottom: 2vw;
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
 
-    body{
+    body {
         overflow: hidden;
     }
 
-    .hero{
-        margin: 10vw 0vw -10vw -9vw;
+    .hero {
+        margin: 10vw 0vw -10vw -9.5vw;
+        border-bottom-right-radius: 150px;
     }
 
-    .Heading{
+    .Heading {
         font-size: 3.85vw;
     }
 
-    .DMY{
+    .DMY {
         margin: 0vw 8vw 0vw 8vw;
     }
 
-    .Input-section{
+    .Input-section {
         margin: 5vw 0vw 2vw 5.5vw;
     }
 
-    .Input-section input{
+    .Input-section input {
         width: 22vw;
         height: 15vw;
-        font-size: 6vw; 
+        font-size: 6vw;
         padding-left: 5vw;
     }
 
-    .Input-section input::placeholder{
-        font-size: 6vw; 
-    }
-
-    .Input-section input:focus{
-        font-size: 6vw; 
-    } 
-
-    .Input-section input::selection{
+    .Input-section input::placeholder {
         font-size: 6vw;
     }
 
-    .error{
+    .Input-section input:focus {
+        font-size: 6vw;
+    }
+
+    .Input-section input::selection {
+        font-size: 6vw;
+    }
+
+    .error {
         font-size: 2.8vw;
     }
 
-    .Seperation{
+    .Seperation {
         margin-top: 7vw;
         margin-bottom: 7vw;
         margin-left: 8vw;
         margin-right: 5vw;
     }
 
-    svg{
-        width:14.5vw;
-        height: 14.5vw; 
+    svg {
+        width: 14.5vw;
+        height: 14.5vw;
     }
 
-    .button{
-        margin: auto;
+    .button {
+        margin-left: -55vw;
     }
 
-    .line{
-        position: absolute;
+    .line {
+        /* position: absolute; */
         z-index: -1;
         width: 93vw;
-        top:48vw;
+        margin-top: 8vw;
+        /* top:48vw; */
     }
 
-    .result{
+    .result {
         font-size: 15vw;
         margin: 0vw 8vw 0vw 8vw;
     }
 
-    #day-result{
+    #day-result {
         margin-bottom: 20vw;
+    }
+
+    .attribution {
+        color: hsl(0, 0%, 8%);
+        margin-top: 30vw;
     }
 
 
