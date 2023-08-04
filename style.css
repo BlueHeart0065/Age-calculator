@@ -148,7 +148,7 @@ body {
 }
 
 svg {
-    width: 4.5vw;
+    width: 4.3vw;
     height: 4.5vw;
     background-color: hsl(259, 100%, 65%);
     cursor: pointer;
@@ -245,8 +245,8 @@ path {
     }
 
     svg {
-        width: 14.5vw;
-        height: 14.5vw;
+        width: 14vw;
+        height: 14.8vw;
     }
 
     .button {
