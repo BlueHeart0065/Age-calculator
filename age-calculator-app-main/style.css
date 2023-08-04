@@ -44,6 +44,7 @@ body{
     margin: auto auto auto auto;
     border-radius: 30px;
     border-bottom-right-radius: 200px;
+    transform: scale(0.8,0.8);
 }
 
 .DMY{
@@ -153,7 +154,7 @@ path{
 }
 
 .result p{
-    margin: 0vw 0vw 0vw 0vw;
+    margin: 0vw 1vw 0vw 0vw;
 }
 
 .result-number{
