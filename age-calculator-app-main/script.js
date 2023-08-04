@@ -121,39 +121,39 @@ submit.onclick = function () {
     else if ((day.value < 1) || !Number.isInteger(parseFloat(day.value))) {
         invalidDay();
     }
-    else if(month.value == 2){
-        if(((year.value%4 == 0) && (year.value%100 != 0) )|| (year.value%400 == 0)){
-            if(day.value > 29){
+    else if (month.value == 2) {
+        if (((year.value % 4 == 0) && (year.value % 100 != 0)) || (year.value % 400 == 0)) {
+            if (day.value > 29) {
                 invalidDay();
             }
-            else{
+            else {
                 validDay();
             }
         }
-        else if(day.value > 28){
+        else if (day.value > 28) {
             invalidDay();
         }
-        else{
+        else {
             validDay();
         }
     }
-    else if(month.value == 1 || month.value == 3 || month.value == 5|| month.value == 7 || month.value == 8 || month.value == 10 || month.value == 12){
-        if(day.value > 31){
+    else if (month.value == 1 || month.value == 3 || month.value == 5 || month.value == 7 || month.value == 8 || month.value == 10 || month.value == 12) {
+        if (day.value > 31) {
             invalidDay();
         }
-        else{
+        else {
             validDay();
         }
     }
-    else if(month.value == 4 || month.value == 6 || month.value == 9 || month.value == 11){
-        if(day.value > 30){
+    else if (month.value == 4 || month.value == 6 || month.value == 9 || month.value == 11) {
+        if (day.value > 30) {
             invalidDay();
         }
-        else{
+        else {
             validDay();
         }
     }
-    else if(day.value > 31){
+    else if (day.value > 31) {
         invalidDay();
     }
     else {
@@ -189,7 +189,7 @@ submit.onclick = function () {
         validYear();
     }
 
-    if(validState){
+    if (validState) {
         getAge();
     }
 }
@@ -201,11 +201,31 @@ function getAge(){
     var totalDays = document.getElementById("days");
     var totalMonths = document.getElementById("months");
     var totalYears = document.getElementById("years");
-    const currentYear = new Date().getFullYear();
+    var currentYear = new Date().getFullYear();
+    var currentMonth = new Date().getMonth() + 1;
+    var currentDay = new Date().getDate();
 
-    const resultYears = currentYear - year.value;
 
+    var resultYears = currentYear - year.value;
+    var resultMonths = 0;
+    var resultDays = 0;
+
+    if(month.value < currentMonth){
+        resultMonths = currentMonth - month.value;
+    }
+    else{
+        resultMonths = 12 - (month.value - currentMonth);
+        resultYears -= 1; 
+    }
+
+    if(day.value <= currentDay){
+        resultDays = currentDay - day.value;
+    }
+
+
+    totalMonths.innerText = resultMonths;
     totalYears.innerText = resultYears;
-    
+    totalDays.innerText = resultDays;
+
 }
 
