@@ -103,6 +103,17 @@ body {
     font-size: 2vw;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
 .error {
     display: none;
     color: hsl(0, 100%, 67%);
@@ -246,7 +257,8 @@ path {
 
     svg {
         width: 14vw;
-        height: 14.8vw;
+        height: 15vw;
+        transform: scale(0.6,0.6);
     }
 
     .button {
