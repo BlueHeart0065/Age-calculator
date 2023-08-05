@@ -216,14 +216,28 @@ function getAge(){
     else{
         resultMonths = 12 - (month.value - currentMonth);
         resultYears -= 1; 
+        if(resultMonths == 12){
+            resultMonths = 0;
+            resultYears += 1;
+        }
     }
 
     if(day.value <= currentDay){
         resultDays = currentDay - day.value;
     }
     else{
-        resultDays = 30 - (day.value - currentDay);
-        resultMonths -= 1;
+        if(currentMonth == 1 || currentMonth == 3 || currentMonth == 5 || currentMonth == 7 || currentMonth == 8 || currentMonth == 10 || currentMonth == 12){
+            resultDays = 31 - (day.value - currentDay);
+            resultMonths -= 1;
+        }
+        else if(currentMonth == 4 || currentMonth == 6 || currentMonth == 9 || currentMonth == 11){
+            resultDays = 30 - (day.value - currentDay);
+            resultMonths -= 1;
+        }
+        else{
+            resultDays = 30 - (day.value - currentDay);
+            resultMonths -= 1;
+        }
     }
 
 
