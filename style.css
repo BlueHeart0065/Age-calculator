@@ -28,6 +28,10 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     display: flex;
     flex-direction: column;
